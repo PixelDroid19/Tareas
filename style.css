@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin:0;
+}
+.principal{
+    width: 80%;
+    max-width:1000px;
+    margin: 1.6em auto;
+}
+.menu{
+    background-color:#000;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li{
+    display:inline-block;
+
+}
+
+.menu ul li a{
+    color: white;
+    display:block;
+    padding: 10px;
+    text-decoration:none;
+    
+}
+
+.menu ul li a:hover{
+    background-color:#42B881;
+    
+}
