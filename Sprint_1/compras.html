@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_compras.css">
+    <title>Compras</title>
+</head>
+<body>
+    <div class="login-box">
+        <img class="avatar" src="./img/Logo3.png" alt="">
+        <h1>Orden de compra</h1>
+        
+    <form >
+        <label for="Cantidad">Cantidad de computadoras compradas</label>
+        <input type="number" id="cantidad">
+
+        <label>Valor de compra</label>
+        <input type="text" id="Compra" value="Valor de comprar">
+
+        <label>Valor de descuentos</label>
+        <input type="text" id="descuento" value="Descuento">
+
+        <label>Total:</label>
+        <input type="text" id="Monto_Final" value="Precio Final">
+
+        <p id="descuentos"></p>
+        
+    </form>
+    <input type="button" onclick="descuento()" value="Calcular">
+</div>
+    
+    <script src="./script_compras.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
 */
   function polindromeChecker(str) {
     const newStr = str.replace(/[\W_]/g, "").toLowerCase()//eliminamos los espacion en linea
-    const strReversed = newStr.split("").reverse().join("")
+    const strReversed = newStr.split("").reverse().join("")/*Estoy dividiendo cada carácter, luego invirtiéndolo y luego uniendolos para obtener una string invertido*/
   
     if(strReversed === newStr){
         resul = "es palindromo";

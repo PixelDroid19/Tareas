@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+}
+#main{
+    background-color:#25406a;
+}
+
+.Contenedor{
+    width:320px;
+    height:420px;
+    color: #fff;
+    background-color: #10293e;
+    box-shadow: 10px 5px 10px black;
+    /*Central contenedor*/
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+/*cambios en el Titulo h1*/
+.Contenedor h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;;
+}
+
+/*Personalizar titulos de los campos*/
+.Contenedor label{
+    margin:0;
+    padding:0;
+    font-weight: bold;
+    text-shadow: black 1px 1px;
+    color:#bbc0c9;
+    display:block;
+}
+/*Tamaño de los campos de entrada*/
+.Contenedor .estilo{
+    width:100%;
+    margin-bottom:20px;
+}
+
+/*Personalizar input*/
+.Contenedor input[type="text"]{
+   border: none;
+   border-bottom: 1px solid white;
+   background: transparent;
+   outline: none;
+   color:#fff;
+   font-size: 16px;     
+}
+/*Personalizar boton de verificar*/
+.Contenedor button[type="button"]{
+    border: none;
+    outline:none;   
+    height:40px;
+    background-color: #5f60a1;
+    color:white;  
+    font-size: 14px;
+    border-radius: 20px;
+    width:100%;
+    margin-bottom:20px;
+ }
+
+ .Contenedor button[type="button"]:hover{
+    background-color: #5153aa;
+    font-size: 15px;
+ }

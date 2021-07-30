@@ -21,7 +21,7 @@
         <a href="#" class="cta"><button>Contact</button></a>
       </header>
 
-      <div class="container-info">
+      <div class="container-info" id="container-info">
         <article class="Movie">
           <h1>La guerra del mañana</h1>
           <p>
@@ -30,7 +30,7 @@
             La humanidad está perdiendo la guerra mundial contra una especie
             alienígena letal.
           </p>
-          <input type="button" value="▶ Play" id="btn" class="btn" />
+          <input type="button" value="▶ Play" id="btn" class="btn" onclick="toggleVideo()"/>
           <input type="button" value="ⓘ More info" id="btn" class="btn" />
         </article>
       </div>
@@ -38,24 +38,20 @@
       <div class="movieSection" id="movieSection">
         <div class="cardmovie">
           <img
-            src="https://www.themoviedb.org/t/p/w220_and_h330_face/tzp6VzED2TBc02bkYoYnQa6r2OK.jpg"
-          />
+            src="https://www.themoviedb.org/t/p/w220_and_h330_face/tzp6VzED2TBc02bkYoYnQa6r2OK.jpg" onclick="toggleVideo()"/>
           <p>La guerra del mañana</p>
           <span>30 jun 2021</span>
         </div>
 
-        <div class="cardmovie">
-            <img
-              src="https://www.themoviedb.org/t/p/w220_and_h330_face/wsq1xCuC9kDhFeoE7xuQFDC5iRC.jpg"
-            />
+        <div class="cardmovie" id="item2">
+            <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/wsq1xCuC9kDhFeoE7xuQFDC5iRC.jpg" onclick="toggleVideo1()"/>
             <p>The Walking Dead</p>
             <span>31 oct 2010</span>
           </div>
 
           <div class="cardmovie">
             <img
-              src="https://www.themoviedb.org/t/p/w220_and_h330_face/3hDtRuwTfQQYRst3kjhvp4Cogjw.jpg"
-            />
+              src="https://www.themoviedb.org/t/p/w220_and_h330_face/3hDtRuwTfQQYRst3kjhvp4Cogjw.jpg" onclick="toggleVideo2()"/>
             <p>Juego de tronos</p>
             <span>17 abr 2011</span>
           </div>
@@ -163,6 +159,51 @@
           
       </div>
 
+      <div class="trailer">
+        <video src="./videos/Traile1.mp4" controls="true" ></video>
+        <img src="./img/close.png" class="close" alt="" srcset="" onclick="toggleVideo()">
+        <div class="info">
+          <h1> La guerra del mañana (2021) </h1>
+          <p>
+            Un día el mundo se paraliza cuando un grupo de viajeros en el tiempo se transporta desde el año 2051 para entregar un mensaje urgente: La humanidad está perdiendo la guerra mundial contra una especie alienígena letal. 
+            La única esperanza de supervivencia es que los soldados y los ciudadanos del presente sean transportados al futuro y se unan a la lucha. Entre los reclutados está el profesor de instituto y padre de familia Dan Forester (Chris Pratt) quien,
+            decidido a salvar el mundo por su hija, se une a una brillante científica (Yvonne Strahovski) y a su padre (J.K. Simmons) en una búsqueda desesperada por reescribir el destino del planeta.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="trailer1">
+        <video src="./videos/Traile2.mp4" controls="true" autoplay="false" id="video1"></video>
+        <img src="./img/close.png" class="close" alt="" srcset="" onclick="toggleVideo1()">
+        <div class="info">
+          <h1> Vista general</h1>
+          <p>
+          "The Walking Dead" está ambientada en un futuro apocalíptico con la Tierra devastada por el efecto de un cataclismo, 
+          que ha provocado la mutación en zombies de la mayor parte de los habitantes del planeta. La serie, explora las dificultades 
+          de los protagonistas para sobrevivir en un mundo poblado por el horror, así como las relaciones personales que se establecen entre ellos,
+           en ocasiones también una amenaza para su supervivencia.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="trailer2">
+        <video src="./videos/Traile3.mp4" controls="true" autoplay="false" id="video2   "></video>
+        <img src="./img/close.png" class="close" alt="" srcset="" onclick="toggleVideo2()">
+        <div class="info">
+          <h1>Vista general</h1>
+          <p>
+            En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan.
+             Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario muro 
+             que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente.
+             Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los reinos, la sangrienta batalla por el trono de Hierro tendrá consecuencias imprevistas y trascendentales. 
+             El invierno se acerca. Que empiece 'Juego de tronos'.            
+          </p>
+        </div>
+      </div>
+      
+
       <footer class="footer" id="footer">
         <p>Copyright 2021</p>
         <p><a href=”#”>Ley de Cookies</a></p>
@@ -170,5 +211,6 @@
         <p>Síguenos en <a href=”#”>Facebook</a></p>
      </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

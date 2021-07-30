@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document Project</title>
+  </head>
+  <body>
+    <div class="container">
+     
+      <main class="Principal">
+        <h1>Neflix Clone</h1>
+        <p>
+          Neflix Clone fue hecho con Css puro para el estilo,<br />
+          sus elementos se posiciona utilizando css grid para hacerlo reponsive
+          para multiples dipositivos.<br /><br/>
+
+         JavaScript se utilizo para crear un evento para el reproductor.
+        </p>
+
+        <p>
+          grid-template-columns: Define las columnas de un contenedor de
+          cuadrícula.<br />
+          Puede especificar el ancho de una columna usando una palabra clave
+          (como auto).
+        </p>
+
+        <h2>css</h2>
+        <code>
+          /*define el número de columnas de la cuadrícula*/
+          grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        </code>
+
+        <p>
+          función repeat(): permite repetir columnas tantas veces como sea
+          necesario.<br />
+          Por ejemplo, si está creando una cuadrícula de 12 columnas, podría
+          escribir la siguiente línea:
+        </p>
+        <h2>css</h2>
+        <code>
+            .grid {
+                display: grid;
+             
+            /*define el número de columnas de la cuadrícula*/
+               grid-template-columns: repeat(12, 1fr);
+             }
+        </code>
+        <h2>JavaScript</h2>
+        <code>
+          function toggleVideo(){
+            const trailer = document.querySelector('.trailer');//Selector para la clase trailer
+            const video = document.querySelector('video');//Selector para la etiqueta trailer
+            trailer.classList.toggle('active');//si es visible está o presente lo elimina, de lo contrario la añade.
+            video.currentTime = 0;
+            video.pause();
+        }
+        </code>
+
+        <p>
+            auto-fill: llena la fila con tantas columnas como pueda caber.<br>
+             Por lo tanto, crea columnas implícitas siempre que una nueva columna puede caber, porque está tratando de llenar la fila con tantas columnas como sea posible.<br>
+            Las columnas recién agregadas pueden estar vacías, pero seguirán ocupando un espacio designado en la fila.<br><br>
+
+            minmax(): especifica el ancho y mínimo de las columna.
+
+            <hr>
+        </p>
+        <h1>Almacen de computadoras</h1>   
+
+        <p>
+          Los clientes tienen derecho a recibir un descuento sobre el monto de la compra.
+          Si la compra es mayor o igual a $1.640.000 pero menor o igual a $3.280.000 el
+          descuento será de 15%. Si la compra es mayor a $3.280.000 y menor o igual a
+          $6.560.000 su descuento será de 25%. Si la compra es mayor a $6.560.000 y
+          menor o igual a 9.840.000 el descuento será de 35% y si la compra es mayor a
+          $9.840.000 no tendrá derecho a recibir un descuento.
+          El valor de un computador es de $820.000*/
+        </p>
+        
+        <h2>JavaScript</h2>
+        <code>
+          const precio = 820000;
+          let cantidad =  document.getElementById("cantidad").value; 
+          let descuento = 0, monto_total=0, monto=0;
+
+              monto = cantidad * precio;
+
+                    if (monto >= 1640000 and monto <= 3280000)
+                    {
+                        descuento = monto * 0.15;
+                        descuentos.innerHTML = "Descuento del 15%";
+                        monto_total = monto - descuento;   
+                    }
+                    else if (monto >= 3280000 and monto <= 6560000)
+                    {
+                        descuento = monto * 0.25;
+                        descuentos.innerHTML = "Descuento del 25%";
+                        monto_total = monto - descuento;   
+                    }
+                    else if (monto >= 6560000 and monto <= 9840000)
+                    {
+                        descuento = monto * 0.35;
+                        descuentos.innerHTML = "Descuento del 35%";
+                        monto_total = monto - descuento;  
+                    } 
+                    else
+                    {
+                        descuentos.innerHTML = "Descuento no disponible para esta compra";
+                        monto_total = monto * cantidad;   
+                    }
+                    document.getElementById("Compra").value = precio * cantidad; 
+                    document.getElementById("descuento").value = descuento; 
+                    document.getElementById("Monto_Final").value = monto_total;
+        </code>
+
+
+        <br>
+        <hr>
+        <br>
+        <h1>Calculator</h1>
+            <p>La calculadora utiliza funciones nativas y no nativas(hecha por el programador)<br> de javascript para realizar las operaciones matematicas</p>
+
+            <p>funciones nativas utilizadas:</p>
+            <ul>
+                <li>eval(): evalúa un código JavaScript representado como una cadena de caracteres.</li>
+                <li>setTimeout: nos permite ejecutar una función una vez después del intervalo de tiempo.</li>
+            </ul>
+
+            <p>funciones no nativas utilizadas:</p>
+            <ul>
+                <li>getData(): se encarga obtener de los input y luego mostrarla en pantalla</li>
+                <li>calculater(): utiliza eval() para realizar la operacion y luego mostrarla en pantalla </li>
+            </ul>
+            <p>
+                Algoritmo:<br>
+                <ol>
+                    <li>Obtener valores</li>
+                    <li>evalua operacion matematica</li>
+                    <li>mostrar resultado</li>
+                </ol>
+            </p>
+            <hr>
+            <h1>Numeros romanos</h1>
+            <p>El Algoritmo de este ejercicio funciona almacenando el numero digitado por el usuario,
+            luego dividiendo ese numero entre para obtener su repetiva unidad, decena, centena y unida de millar.
+            luego se imprime los valores en romano usando un condicional switch().
+            </p>
+            <h1>Javascript</h1>
+            <code>
+                /*Declaramos las variables para guardar los valores*/
+                let unidades=0, decenas=0, centenas=0, millar=0;
+                
+                /*Ejemplo: 215 para obtener su unida, decena y centena
+                  Tendremos que guarda su resto de cada uno:
+
+                  unidad = numero%10; aqui unidad sera igual al resto el cual es 5.
+                  numero = numero/10;luego dividimos numero entre 10 para obtener 21 y lo guardamos.
+                  centena = numero%10; centena sera igual a 1;
+                  numero = numero/10; extraemos el 2;
+                  decena = numero%10; decena sera igual 2
+                */    
+
+                    unidades = numero%10; numero /= 10;
+                    decenas = Math.trunc(numero%10); numero /= 10;
+                    centenas = Math.trunc(numero%10); numero /= 10;
+                    millar = Math.trunc(numero%10); numero /= 10;
+
+                
+                /*Luego usamos condicionales para imprimir los numeros en version romano*/
+
+                switch(unidades){
+                    case 1: document.getElementById("result").value += "I";break;
+                    case 2: document.getElementById("result").value += "II";break;
+                    case 3: document.getElementById("result").value += "III";break;
+                    case 4: document.getElementById("result").value += "IV";break;
+                    case 5: document.getElementById("result").value += "V";break;
+                    case 6: document.getElementById("result").value += "VI";break;
+                    case 7: document.getElementById("result").value += "VII";break;
+                    case 8: document.getElementById("result").value += "VIII";break;
+                    case 9: document.getElementById("result").value += "IX";break;
+                    }
+            </code>
+      </main>
+    </div>
+  </body>
+</html>
