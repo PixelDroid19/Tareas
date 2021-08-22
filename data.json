@@ -59,7 +59,12 @@
     "name":"Page Tribute",
     "image":"./img/TributePage.png",
     "href": "./Tributepage/index.html"
+  },
+  {
+    "id": 10,
+    "name":"Encuesta",
+    "image":"./img/Formulario.png",
+    "href": "./Encuesta/index.html"
   }
 ]
 
-            

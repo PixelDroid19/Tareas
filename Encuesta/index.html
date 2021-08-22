@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./spectre/spectre.min.css">
+	<link rel="stylesheet" href="./spectre/spectre-exp.min.css">
+	<link rel="stylesheet" href="./spectre/spectre-icons.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="contenedor" action="#" method="POST">
+		<!--Titulo-->
+		<h1 id="title" class="title">Formulario</h1>
+		<!--Descripcion-->
+		<p id="description" class="description">Sorteamos un PC gaming<br> valorado en 1300 Euros por completar una encuesta</p>
+		<br>
+
+		<form id="survey-form" class="survey-form">
+
+			  <div class="form-group">
+				<label for="name" id="name-label" class="form-label">Nombre</label>
+            	<input class="form-input" type="text" name="name" id="name" placeholder="Nombre" required>
+
+  				<label for="name" id="email-label" class="form-label">Email</label>
+            	<input class="form-input" type="email" name="email" id="email" placeholder="Email"  onkeydown="validation()" required>
+            	<span id="text"></span>
+			  </div>
+
+  			<!--Lista desplegable-->
+  		
+			<div class="form-group">
+				<h5 for="Os"><br>Sistema operativo</h5>
+				<select class="form-select">
+				  <option>Selecciona</option>
+				  <option>Windows</option>
+				  <option>Mac</option>
+				  <option>Linux</option>
+				  <option >Otro</option>
+				</select>
+			  </div>
+
+			<!--Sexo del usuario-->
+			<div class="form-group">
+				<label class="form-radio form-inline">
+				  <input type="radio" name="gender" checked=""><i class="form-icon"></i> Hombre
+				</label>
+				<label class="form-radio form-inline">
+				  <input type="radio" name="gender"><i class="form-icon"></i> Mujer
+				</label>
+			  </div>
+
+			<!--opciones en checkbox-->
+			<div class="stated">
+				<label><br>Quieres?</label><br>
+				<input type="checkbox"  value="1" name="" class="opc">Portatil</input>
+				<input type="checkbox"  value="2" name="" class="opc">Torre</input>
+				<input type="checkbox"  value="3" name="" class="opc">PC Gaming</input><br><br>
+			</div>
+			
+
+  			<textarea id="descripcion" name="descripcion" cols="100" rows="6"></textarea>
+  			<br>
+  			<input type="submit" class="btn btn-primary" id="submit" name="send" value="Enviar">
+		</form>
+	</div>
+	
+</body>
+</html>

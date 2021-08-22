@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+} 
+
+body{
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.contenedor {
+  width: 80%;
+  max-width: 500px; 
+  padding: 15px;
+  color: white;
+  margin: 1.6em auto;
+  background-color: rgba(0, 0, 0, 0.692);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.form-select{
+    color: black;
+}
+
+.opc{
+    margin-right: 10px;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title, .description{
+    text-align: center;
+}
+
+textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+textarea {
+    resize: none;
+ }
