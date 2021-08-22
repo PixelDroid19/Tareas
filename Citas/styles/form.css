@@ -25,6 +25,13 @@ body{
     color:black;
     background-color:rgba(255, 255, 255, 0.986);
 }
+.btn.btn-link{
+    color: white;
+}
+.btn.btn-link:hover{
+    color:black;
+    background-color:rgba(255, 255, 255, 0.986);
+}
 
 .container{
     position: absolute;
