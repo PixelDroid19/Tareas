@@ -1,0 +1,24 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Damien ",
+      "Clave": "19821717",
+      "id": 1
+    },
+    {
+      "nombre": "asdas",
+      "Clave": "asdas",
+      "id": 2
+    },
+    {
+      "nombre": "Damien",
+      "Clave": "19821717",
+      "id": 3
+    },
+    {
+      "nombre": "Damien",
+      "Clave": "19821717",
+      "id": 4
+    }
+  ]
+}

@@ -1,58 +1,51 @@
-/*Css hecho por Damien Monasterios*/
-* {
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+*{
   margin: 0;
   padding: 0;
+  font-size:16px;
+  font-family: 'Klee One', cursive;
 }
 
-body {
-  display: grid;
-  font-family: 'Open Sans', Arial, sans-serif;
-  grid-template-columns: 20% 50%;
- 
-  grid-gap: 10px;
-  grid-template-areas:"navbar main-section main-section"
-                      "navbar main-section main-section"
-                      "navbar main-section main-section";
-}
-/*Menu */
-nav{
-    display: block;
+.Principal{
+  width:80%;
+  max-width: 1000px;
+  display:grid;
+  grid-template-columns:30% 80%;
 }
 
-#navbar{
-    position: fixed;
-    width: 255px;
-    min-width: auto;
-    height: 100%;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-  grid-area:navbar;
+.main-doc{
+  grid-area: 1/2;
+  padding: 40px;
 }
 
-#navbar ul {
-    height: 90%;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
+.main-doc ul li{
+  list-style: none;
 }
 
-nav ul li {
-  padding: 14px;    
-  list-style-type: none;
-  border-bottom: 1px solid black;
+.main-doc article{
+  margin: 20px;
 }
 
-#b{
-    border-top: 1px solid black;
+.navbar{
+  position: fixed;
+  grid-area: 1/1;;
+  height: 100%;
+  border-right: 1px solid black;
+  border-color: rgba(0, 22, 22, 0.4);
 }
 
-nav ul a {
-  color: black;
+.navbar li{
+  list-style: none; 
+  margin:10px 20px 10px 20px;
+}
+
+.navbar li a{
+  color:black;
   text-decoration: none;
 }
 
-nav ul li:hover{
-    background-color:blue;
+.navbar li a:hover{
+  color: rgb(144, 144, 144);
 }
 
 /*Cuerpo de pagina*/
@@ -62,15 +55,6 @@ header {
     text-align: center;
     font-size: 1.8em;
     font-weight: thin;
-}
-#main-doc{
-  grid-area: main-section;
-}
-
-main {
-  background-color: #F0F696;
-  grid-column: 2/6;
-
 }
 
 section article{
@@ -101,33 +85,4 @@ article ul li{
     margin: 40px;
   }
 
-  @media(max-width:1248px){
-    #navbar{
-      position:relative;
-      width:215px;
-      grid-area:navbar;
-    }
-  }
-
-@media(max-width:768px){
-  body {
-    grid-template-columns: 100%;
-    grid-template-rows: 20%;
-    grid-template-areas:"main-section"
-                        "navbar";
-  }
-  #navbar{
-    position:relative;
-    width:auto;
-    grid-area:navbar;
-  }
-
-    
-  nav ul li {
-    margin-top:18px;
-    padding: 15px;    
-    display: inline-block;
-    list-style-type: none;
-    border:none;
-  }
-}
+  
