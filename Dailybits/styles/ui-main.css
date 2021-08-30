@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/*Menu Principal*/
+.contenedor {
+  display: grid;
+  background-color: rgb(19, 17, 17);
+  grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+}
+
+.title {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.item1,
+.item2,
+.item3 {
+  width: 100%;
+  height: 100px;
+}
+.item2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, auto));
+}
+p {
+  margin: 0;
+}
+
+.item4 {
+  width: 100%;
+  height: 245px;
+}
+
+/*Imagenes*/
+.Course1 {
+  text-align: center;
+}
+
+.Course2 {
+  margin-right: 20px;
+  text-align: right;
+}
+.Course3 {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.Course1:hover {
+  cursor: pointer;
+}
+
+.Course2:hover {
+  cursor: pointer;
+}
+
+.Course3:hover {
+  cursor: pointer;
+}
+
+.imgRounde {
+  width: 100px;
+}
+/*Nav*/
+.navMain {
+  display: grid;
+  background-color: rgb(61, 61, 61);
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  width: 100%;
+}
+/*icons*/
+.Home,
+.statistics,
+.Profile {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+ion-icon {
+  color: antiquewhite;
+  font-size: 30px;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+  color: rgb(168, 167, 167);
+}
+
+.center {
+  margin-top: 10px;
+}
+
+.Home {
+  width: 100%;
+  height: 100%;
+}
+
+.statistics {
+  width: 100%;
+  height: 100%;
+}
+
+.Profile {
+  width: 100%;
+  height: 100%;
+}
+
+/*Estilo de la pantilla de Estadisticas*/
+
+.titleEst {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+.Statistics1,
+.Statistics2,
+.Statistics3 {
+  width: 100%;
+  height: 100px;
+}
+
+.Statistics4 {
+  width: 100%;
+  height: 245px;
+}
+
+/*Informacion*/
+.ContentInfo {
+  color: white;
+  width: 90%;
+  margin: 20px auto;
+  font-size: 19px;
+  font-weight: 900;
+  border-radius: 10px;
+  border: 2px solid rgb(182, 182, 182);
+}
+
+.ContentInfo p {
+  padding: 15px;
+  margin: auto 0;
+}
+
+.answerWrong {
+  color: red;
+}
+
+/*Usuaio*/
+
+.titleUsers {
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px;
+  width: 100%;
+  height: 50px;
+}
+
+
+.Photo,
+.boxInfo,
+.item3 {
+  width: 100%;
+  color: white;
+  height: 100px;
+}
+
+.Close {
+  font-size: 18px;
+  color: rgb(246, 27, 27);
+  border: none;
+  background-color: transparent;
+}
+
+.Close:hover {
+  cursor: pointer;
+}
+
+.Close:active {
+  color: rgb(138, 9, 9);
+}
+
+/*Imagenes*/
+.photoCenter,
+.infoUser {
+  text-align: center;
+}

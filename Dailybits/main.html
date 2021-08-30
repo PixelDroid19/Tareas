@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./spectre/spectre.min.css">
+    <link rel="stylesheet" href="./spectre/spectre-exp.min.css">
+    <link rel="stylesheet" href="./spectre/spectre-icons.min.css">  
+    <link rel="stylesheet" href="./styles/ui-main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP</title>
+</head>
+<body>
+    <div class="contenedor" id="targetContent">
+      
+     </div>
+
+     <!--Principal-->
+     <template id="Main">
+        <div class="title">
+            <h5>Practica tus conocimientos en la<br>
+                categoría que prefieras.</h5>
+        </div>
+
+        <div class="item1">
+            <div class="Course1">
+                 <img src="./icons/iconHtml.png" alt="..."  class="imgRounde" onclick="redireccionar('./ui-answer.html')">
+            </div>
+        </div>
+
+        <div class="item2">
+            <div class="Course2">
+                <img src="./icons/iconCss.png" alt="..."  class="imgRounde">
+            </div>
+            <div class="Course3">
+                <img src="./icons/iconJS.png"  class="imgRounde">
+            </div>
+        </div>
+
+        <div class="item3">
+
+        </div>
+
+        <div class="item4">
+
+        </div>
+
+        <div class="navMain">
+            <div class="Home">
+                <div class="center">
+                   <ion-icon name="home-outline" onclick="Main()"></ion-icon>
+                    <p>Home</p> 
+                </div>
+            </div>
+
+            <div class="statistics">
+                <div class="center">
+                   <ion-icon onclick="Statistics()" name="bar-chart-outline"></ion-icon>
+                    <p>Estadisticas</p>  
+                </div>  
+            </div>
+            <div class="Profile">
+                <div class="center">
+                    <ion-icon name="people-outline" onclick="User(), Showdata()"></ion-icon>
+                    <p>Perfil</p> 
+                </div>
+            </div>
+        </div>
+    </template>
+    
+    <!--Estadisticas-->
+    <template id="Statistics">
+        <div class="titleEst">
+            <h3>Estadisticas</h3>
+        </div>
+
+        <div class="Statistics1">
+            <div class="ContentInfo">
+                <p><ion-icon name="time-outline"></ion-icon>  Tiempo de estudio (horas): <i id="Hours">0</i></p>
+            </div>
+        </div>
+
+        <div class="Statistics2">
+            <div class="ContentInfo">
+                <p><ion-icon name="chatbubble-outline"></ion-icon>  Respuestas contestada: <i id="allAnswer">0</i></p>
+            </div>
+        </div>
+
+        <div class="Statistics3">
+            <div class="ContentInfo">
+                <p><ion-icon name="chatbubble-outline"></ion-icon>  Respuestas correctas: <i id="answerDone">0</i></p>
+            </div>
+        </div>
+
+        <div class="Statistics4">
+            <div class="ContentInfo">
+                <p><ion-icon name="chatbubble-outline"></ion-icon>  Respuestas incorrectas: <i id="answerWrong" class="answerWrong">0</i></p>
+            </div>
+        </div>
+
+        <div class="navMain">
+            <div class="Home">
+                <div class="center">
+                   <ion-icon name="home-outline" onclick="Main()"></ion-icon>
+                    <p>Home</p> 
+                </div>
+            </div>
+
+            <div class="statistics">
+                <div class="center">
+                   <ion-icon onclick="Statistics()" name="bar-chart-outline"></ion-icon>
+                    <p>Estadisticas</p>  
+                </div>  
+            </div>
+            <div class="Profile">
+                <div class="center">
+                    <ion-icon name="people-outline" onclick="User(), Showdata()"></ion-icon>
+                    <p>Perfil</p> 
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!--Usuario informacion-->
+    <template id="TemplateUser">
+        <div class="titleUsers">
+            <h3>Perfil</h3>
+        </div>
+
+        <div class="Photo">
+            <div class="photoCenter">
+                <figure class="avatar avatar-xl">
+                    <img src="" alt="..."  class="imgRounde"  id="ImgUser">
+                </figure>
+                 
+            </div>
+        </div>
+
+        <div class="boxInfo">
+            <div class="infoUser">
+               <p id="nameUser">Name Here</p>
+               <p id="emailUser" >xxxxxxx@gmail.com</p>
+
+               <input type="button" value="cerrar sesion" onclick="redireccionar('./index.html')" class="Close" id="Close">
+            </div>
+        </div>
+
+        <div class="item3">
+
+        </div>
+
+        <div class="item4">
+
+        </div>
+
+        <div class="navMain">
+            <div class="Home">
+                <div class="center">
+                   <ion-icon name="home-outline" onclick="Main()"></ion-icon>
+                    <p>Home</p> 
+                </div>
+            </div>
+
+            <div class="statistics">
+                <div class="center">
+                   <ion-icon onclick="Statistics()" name="bar-chart-outline"></ion-icon>
+                    <p>Estadisticas</p>  
+                </div>  
+            </div>
+            <div class="Profile">
+                <div class="center">
+                    <ion-icon name="people-outline" onclick="User(), Showdata()"></ion-icon>
+                    <p>Perfil</p> 
+                </div>
+            </div>
+        </div>
+    </template>
+        
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+    <script src="./scripts/template.js"></script>
+    <script src="./scripts/Links.js"></script>
+    <script src="./scripts/Systemlogin.js"></script>
+</body>
+</html>

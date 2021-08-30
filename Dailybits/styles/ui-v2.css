@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #323232;
+}
+
+.contenedor {
+  width: 430px;
+  height: 600px;
+  max-width: 550px;
+  /*Centrar*/
+  position: absolute;
+  top: calc(50% - 300px);
+  left: calc(50% - 215px);
+  background-color: rgba(19, 17, 17, 0.835);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.registro,
+.TitleR {
+  text-align: center;
+}
+
+.TitleR,
+.CamposR,
+p {
+  color: white;
+}
+
+.TitleR h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.Rstyle {
+  width: 90%;
+  height: 45px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.registro .term {
+  padding: 20px;
+}
+
+.registro .term a,
+.registro a {
+  color: green;
+}
+
+.CreateAccount {
+  border-radius: 5px;
+  font-size: 18px;
+  height: 50px;
+}
+
+.CreateAccount {
+  width: 95%;
+  border: none;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: rgb(5, 87, 2);
+}
+
+.CreateAccount:hover {
+  cursor: pointer;
+  background-color: rgb(6, 75, 4);
+}

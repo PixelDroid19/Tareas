@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "Preg":"¿Qué usa un lenguaje de marcado para identificar contenido?",
+    "Corr":"Etiquetas",
+    "resp1":"Etiquetas",
+    "resp2":"Comandos",
+    "resp3":"Scripts",
+    "resp4":"Funciones"
+  },
+  {
+    "id": 2,
+    "Preg":"¿Cuál es la extensión correcta para archivos HTML?",
+    "Corr":".html",
+    "resp1":".exe",
+    "resp2":".css",
+    "resp3":".html",
+    "resp4":".txt"
+  },
+  {
+    "id": 3,
+    "Preg":"¿Dónde debes colocar la etiqueta title?",
+    "Corr":"En medio de las etiquetas head",
+    "resp1":"Antes de la etiqueta html",
+    "resp2":"En medio de las etiquetas body",
+    "resp3":"En medio de las etiquetas head",
+    "resp4":"Después de la etiqueta html"
+  },
+  {
+    "id": 4,
+    "Preg":"¿Qué es HTML?",
+    "Corr":"Lenguaje de marcación",
+    "resp1":"Librería de hipertexto",
+    "resp2":"Lenguaje de Scripting",
+    "resp3":"Lenguaje de Programación",
+    "resp4":"Lenguaje de marcación"
+  },
+  {
+    "id": 5,
+    "Preg":"¿Cuáles son las partes principales que contiene el archivo HTML?",
+    "Corr":"Head y Body",
+    "resp1":"Ojos y boca",
+    "resp2":"Head y Body",
+    "resp3":"Manos y pies",
+    "resp4":"Cabecera y pie de página"
+  }
+]

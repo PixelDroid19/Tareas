@@ -1,0 +1,32 @@
+{
+  "usuarios": [
+    {
+      "ImageUrl": "https://picsum.photos/200/300",
+      "nombre": "Damien",
+      "correo": "Monasterio13septiembre@gmail.com",
+      "clave": "19821717",
+      "id": 1
+    },
+    {
+      "ImageUrl": "https://picsum.photos/200/300",
+      "nombre": "Jesus",
+      "correo": "JesusJaimes@gmail.com",
+      "clave": "085205",
+      "id": 2
+    },
+    {
+      "ImageUrl": "https://picsum.photos/200/300",
+      "nombre": "Jesus",
+      "correo": "xxxxxx@gmail.com",
+      "clave": "12345",
+      "id": 3
+    },
+    {
+      "ImageUrl": "https://picsum.photos/200/300",
+      "nombre": "CCC",
+      "correo": "CCC",
+      "clave": "CCC",
+      "id": 4
+    }
+  ]
+}

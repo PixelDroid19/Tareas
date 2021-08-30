@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./spectre/spectre.min.css" />
+    <link rel="stylesheet" href="./spectre/spectre-exp.min.css" />
+    <link rel="stylesheet" href="./spectre/spectre-icons.min.css" />
+    <link rel="stylesheet" href="./styles/alert/alertify.css">
+    <link rel="stylesheet" href="./styles/ui-Login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP</title>
+  </head>
+  <body>
+    <div class="contenedor" id="targetRegist">
+      
+    </div>
+
+    <template id="TemplateLogin">
+      <div class="Logo">
+        <img src="./img/Logo.png" alt="" srcset="" />
+      </div>
+      <div class="Title">
+        <h1>Iniciar sesión</h1>
+        <input type="button" class="LoginGoogle" id="LoginGoogle" value="Continuar con Google" />
+        <hr />
+      </div>
+
+      <div class="Campos">
+        <h5>Correo electrónico</h5>
+        <input
+          type="text"
+          id="Correo"
+          class="form-input"
+          placeholder="Ingrese su correo electrónico"
+        /></div>
+        <div class="reg">
+
+          <div class="log_in">
+            <input type="button" class="Login" id="Login" onclick="checkLogin()" value="log in" />
+          </div>
+
+            <div>
+                <a href="#">¿Se te olvidó tu contraseña?</a>
+            </div>
+          
+          <p>¿Aún no tienes una cuenta? <a onclick="Regist()"> Inscribirse</a></p>
+
+          <div class="space">
+
+          </div>
+          <script src="./scripts/Systemlogin.js"></script>
+        </div>
+      </div>
+    </template>
+
+    <template id="TemplateRegist">
+      <div class="TitleR">
+        <h1>Crea tu perfil</h1>
+      </div>
+
+      <div class="CamposR">
+
+        <input type="text" id="NameR" class="form-input Rstyle" placeholder="Nombre (opcional)"/>
+        <input type="text" id="CorreoR" class="form-input Rstyle" placeholder="Correo electrónico"/>
+        <input type="text" id="PasswordR" class="form-input Rstyle" placeholder="Contraseña"/>
+        </div>
+
+        <div class="registro">
+
+          <div class="ButtonCreate">
+            <input type="button" class="CreateAccount" id="CreateAccount" onclick="CrearUsuario()" value="Crear cuenta" />
+          </div>
+
+            <div class="term">
+                <span>Al registrarte en Daily Bits, aceptas nuestros Términos y Política de privacidad.</span>
+            </div>
+          
+             <p>¿Ya tienes una cuenta? <a onclick="Login()"> Ingresar</a></p>
+
+        </div>
+        <script src="./scripts/SystemRegistro.js"></script>
+    </template>
+
+    <script src="scripts/templateLogin.js"></script>
+    <script src="./styles/alert/alertify.js"></script>
+    <script src="./scripts/Links.js"></script>
+  </body>
+</html>

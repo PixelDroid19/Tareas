@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="spectre/spectre.min.css" />
+    <link rel="stylesheet" href="spectre/spectre-exp.min.css" />
+    <link rel="stylesheet" href="spectre/spectre-icons.min.css" />
+    <link rel="stylesheet" href="./styles/ui-answer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <!--Header Bar-->
+      <div class="barContent">
+        <div class="barItems">
+          <div class="close"><a class="close" id="close" onclick="redireccionar('./main.html')">✖️</a></div>
+
+        <div class="BarProgress">
+            <div class="bar">
+              <div class="bar-item" id="bar-item" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="Life"> <a>❤️</a> <a id="Life">5</a> </div>
+        </div>
+      </div>
+      
+      <!--Section of Question-->
+      <div class="Question">
+        <div class="character">
+          <img src="./img/Boy.png" alt="" id="characterImg" />
+        </div>
+        <div class="textQuestion">
+          <p id="Text">
+          </p>
+        </div>
+      </div>
+
+      <!--Section of Answer-->
+
+      <div class="answerBox" id="answer_Items">
+        <div class="answer" id="select" data-id="0">
+          <input type="radio"/><i class="form-icon selectItems" id="preg1"></i>
+        </div>
+
+        <div class="answer" id="answer" data-id="1">
+          <input type="radio" /><i class="form-icon selectItems" id="preg2" ></i>
+        </div>
+
+        <div class="answer" data-id="2">
+            <input type="radio"/><i class="form-icon selectItems" id="preg3"></i>
+          </div>
+
+          <div class="answer" data-id="3">
+            <input type="radio"/><i class="form-icon selectItems" id="preg4"></i></input>
+          </div>
+      </div>
+
+
+
+      <!--Button of check-->
+      <div class="comprobar" id="comprobar">
+        <input type="button" class="btn btn-primary btnC" value="COMPROBAR" id="CheckAnswer"/>
+      </div>
+      <div class="Continuar" id="Next">
+        <p>¡Buen trabajo!</p>
+        <div class="centerNext">
+          <input type="button" class="btn btn-success btnL" value="Continuar" id="CheckNext"/>
+        </div>
+      </div>
+
+      <div class="Intentar" id="Try">
+        <p>¡La respuesta correcta es: </p>
+        <p id="answerCorrect"></p>
+        <div class="centerNext">
+          <input type="button" class="btn btn-error btnL" value="Intentar de nuevo" id="TryButton"/>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/System.js"></script>
+    <script src="./scripts/Links.js"></script>
+  </body>
+</html>

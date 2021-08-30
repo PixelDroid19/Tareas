@@ -71,6 +71,12 @@
     "name":"Tienda V2",
     "image":"./img/Tienda.png",
     "href": "./Tienda/index.html"
+  },
+  {
+    "id": 13,
+    "name":"Daily_Bits",
+    "image":"./img/Dailybits.png",
+    "href": "./Dailybits/index.html"
   }
 ]
 
