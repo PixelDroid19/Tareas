@@ -1,20 +1,39 @@
-let getData = function(){//Funcion guardar las horas y calcular el pago
-    const pago = 16000, extra=20000;//constante con el valor de pago y Extra
-    let total=0, pagoExtra=0; //Variables: pago final y pago de horas extras 
-    let Hours = document.getElementById("Hours").value;//Pedir valor del campo de Horas
+const Payment = 16000, extra = 20000;
+let Total = 0, ExtraPayment = 0;
 
-    if(Hours == 40 || Hours < 40){//Condicional para calcular pagos
-        for(let i = 0; i < Hours;i++){
-            total += pago;
-        }
-        console.log("Pago: " + total);
-        document.getElementById("Salary").value = (Hours * pago);
-        document.getElementById("totalPay").value = total;
-    }else{
-        pagoExtra = Hours - 40;
-        total = (pagoExtra * extra) + (40 * pago);
-        document.getElementById("hoursExtra").value = (pagoExtra * extra);
-        document.getElementById("Salary").value = (40 * pago);
-        document.getElementById("totalPay").value = total;
+const NumberHours = document.getElementById("Hours"),
+      BtnCheck = document.getElementById("BtnCheck");
+
+const ReturnValue = (Target, Value = 0, Return) => {
+  switch (Return) {
+    case "true":
+      document.getElementById(Target).value = Value;
+    case "false":
+      return Target.value;
+  }
+};
+
+const CalculateSalary = () => {
+  const Hours = ReturnValue(NumberHours, 0, "false");
+  Total = 0;
+
+  if (Hours == 40 || Hours < 40) {
+    //Condicional para calcular pagos
+    for (let i = 0; i < Hours; i++) {
+      Total += Payment;
     }
-}
+
+    console.log("Pago: " + Total);
+    ReturnValue("Salary", Hours * Payment, "true");
+    ReturnValue("totalPay", Total, "true");
+  } else {
+    ExtraPayment = Hours - 40;
+    Total = ExtraPayment * extra + 40 * Payment;
+
+    ReturnValue("hoursExtra", ExtraPayment * extra, "true");
+    ReturnValue("Salary", 40 * Payment, "true");
+    ReturnValue("totalPay", Total, "true");
+  }
+};
+
+BtnCheck.addEventListener("click", CalculateSalary);

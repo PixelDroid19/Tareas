@@ -1,0 +1,230 @@
+/*Nav*/
+li,
+a,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.logo {
+  cursor: pointer;
+  width: 120px;
+
+}
+
+.nav_link {
+  list-style: none;
+}
+
+.nav_link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_link li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover {
+  color: #0088a9;
+}
+
+header a button {
+  padding: 9px 25px;
+  background: rgba(0, 0, 255, 0.274);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header a button:hover {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+/*Nav End*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(7, 6, 6, 0.863);
+  color: #ffffff;
+}
+
+.Content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.Content .Movie {
+  text-align: center;
+}
+
+.Content .Movie .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Content .Movie .poster {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  transition: all 0.25s ease;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.Content .Movie .poster:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: rgba(0, 1, 7, 0.61);
+}
+footer .container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 20px 40px;
+  color: rgb(233, 218, 218);
+}
+.about {
+  /* padding: 0 20px ; */
+}
+
+.about h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.about h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 50px;
+  height: 2px;
+  background: rgba(40, 87, 131, 0.74);
+}
+footer .container .about .sci {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 10px;
+}
+.about .sci li {
+  list-style: none;
+}
+.sci li a {
+  text-decoration: none;
+  color: whitesmoke;
+  width: 48px;
+  height: 48px;
+  background: rgba(90, 111, 168, 0.596);
+  display: inline-block;
+  display: grid;
+  align-content: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+.sci li a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+.sci li a:hover {
+  background: rgba(0, 0, 255, 0.274);
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 0;
+  color: whitesmoke;
+}
+ul li a:hover {
+  color: yellow;
+}
+.contactUs li a {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+}
+.copyright {
+  background: rgba(0, 0, 0, 0.726);
+  text-align: center;
+  padding: 12px 0;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  footer {
+    padding: 40px;
+  }
+  footer .container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 10px 20px;
+    color: rgb(233, 218, 218);
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  footer .container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 10px 20px;
+    color: rgb(233, 218, 218);
+  }
+  .copyright {
+    background: rgba(0, 0, 0, 0.726);
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    color: #fff;
+  }
+}

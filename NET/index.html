@@ -1,111 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="spectre.min.css">
-    <link rel="stylesheet" href="spectre-exp.min.css">
-    <link rel="stylesheet" href="spectre-icons.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Net</title>
-  </head>
-  <body>
-    <div class="grid-container">
-      <header>
-        <img class="logo" src="./img/Logo.png" alt="Logo" />
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/7cedd886a2.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./Asserts/style/index.css">
+	<title>Sitio de peliculas</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Asserts/Logo/NoLogo.png" alt="">
         <nav>
-          <ul class="nav-links">
-            <li><a href="">Home</a></li>
-            <li><a href="#movieSection">Movies</a></li>
-            <li><a href="">About</a></li>
+          <ul class="nav_link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movie</a></li>
+            <li><a href="#">Plans</a></li>
           </ul>
         </nav>
-        <a href="./form.html" class="cta"><button>Acount</button></a>
+        <a href="#" class="cta"><button>Contact</button></a>
       </header>
 
-      <div class="container-info" id="container-info">
-        <article class="Movie">
-          <h1>La guerra del mañana</h1>
-          <p>
-            Un día el mundo se paraliza cuando un grupo de viajeros en el tiempo
-            se transporta desde el año 2051 para entregar un mensaje urgente:<br />
-            La humanidad está perdiendo la guerra mundial contra una especie
-            alienígena letal.
-          </p>
-          <input type="button" value="▶ Play" id="btn" class="btn" onclick="toggleVideo()"/>
-          <input type="button" value="ⓘ More info" id="btn" class="btn" />
-        </article>
-      </div>
-      
-      <div class="movieSection" id="items" id="movieSection">
+
+
+	<div class="Content" id="Content">
             
-      </div>
-  
-      <template id="template-card" >
-              <div class="cardmovie">
-                      <img src="" alt="" class="select"></img>
-                      <p></p>
-                      <span></span>
-                </div>
-      </template>
-      
-
-      
-
-      <div class="trailer">
-        <video src="./videos/Traile1.mp4" controls="true" ></video>
-        <img src="./img/close.png" class="close" alt="" srcset="" onclick="toggleVideo()">
-        <div class="info">
-          <h1> La guerra del mañana (2021) </h1>
-          <p>
-            Un día el mundo se paraliza cuando un grupo de viajeros en el tiempo se transporta desde el año 2051 para entregar un mensaje urgente: La humanidad está perdiendo la guerra mundial contra una especie alienígena letal. 
-            La única esperanza de supervivencia es que los soldados y los ciudadanos del presente sean transportados al futuro y se unan a la lucha. Entre los reclutados está el profesor de instituto y padre de familia Dan Forester (Chris Pratt) quien,
-            decidido a salvar el mundo por su hija, se une a una brillante científica (Yvonne Strahovski) y a su padre (J.K. Simmons) en una búsqueda desesperada por reescribir el destino del planeta.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="trailer1">
-        <video src="./videos/Traile2.mp4" controls="true" autoplay="false" id="video1"></video>
-        <img src="./img/close.png" class="close" alt="" srcset="" onclick="toggleVideo1()">
-        <div class="info">
-          <h1> Vista general</h1>
-          <p>
-          "The Walking Dead" está ambientada en un futuro apocalíptico con la Tierra devastada por el efecto de un cataclismo, 
-          que ha provocado la mutación en zombies de la mayor parte de los habitantes del planeta. La serie, explora las dificultades 
-          de los protagonistas para sobrevivir en un mundo poblado por el horror, así como las relaciones personales que se establecen entre ellos,
-           en ocasiones también una amenaza para su supervivencia.
-
-          </p>
-        </div>
-      </div>
-
-      <div class="trailer2">
-        <video src="./videos/Traile3.mp4" controls="true" autoplay="false" id="video2   "></video>
-        <img src="./img/close.png" class="close" alt="" srcset="" onclick="toggleVideo2()">
-        <div class="info">
-          <h1>Vista general</h1>
-          <p>
-            En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan.
-             Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario muro 
-             que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente.
-             Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los reinos, la sangrienta batalla por el trono de Hierro tendrá consecuencias imprevistas y trascendentales. 
-             El invierno se acerca. Que empiece 'Juego de tronos'.            
-          </p>
-        </div>
-      </div>
-      
-
-      <footer class="footer" id="footer">
-        <p>Copyright 2021</p>
-        <p><a href=”#”>Ley de Cookies</a></p>
-        <p>Esta es nuestra dirección de contacto</p>
-        <p>Síguenos en <a href=”#”>Facebook</a></p>
-     </footer>
     </div>
-    <script src="addItems.js"></script>
-    <script src="./script.js"></script>
-  </body>
+
+
+ <footer>
+      <div class="container">
+          <div class="about">
+              <h2>About Us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque enim iusto tempora repellat
+                  molestiae. Sed voluptatem sapiente magni, eos nisi tempore eligendi expedita laboriosam incidunt
+                  necessitatibus porro obcaecati odit beatae. Deleniti libero iusto eius dolorem quo, quasi et
+                  aspernatur hic! Natus asperiores beatae reprehenderit dolorem, ea earum esse! Temporibus, amet.</p>
+             
+                  <ul class="sci">
+                      <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                              </i></a></li>
+                      <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>
+                              </i></a></li>
+                      <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a></li>
+                      <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                          </a></li>
+                  </ul>
+             
+          </div>
+          <div class="quick">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms & Conditions</a>
+                  </li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+          </div>
+          <div class="shop">
+              <h2>Shop</h2>
+              <ul>
+                  <li><a href="">Course</a></li>
+                  <li><a href="">technology</a></li>
+                  <li><a href="">Mobile</a></li>
+              </ul>
+          </div>
+          <div class="contactUs">
+              <h2>Contact Us</h2>
+              <!-- <hr width="50%"> -->
+              <ul>
+                  <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Lorem ipsum dolor sit</a></li>
+                  <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i>
+                          xxxxxxxxx</a></li>
+                  <li><a href=""> <i class="fa fa-envelope" aria-hidden="true"></i>
+                          xxxxxxxxxxx@gmail.com</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  <div class="copyright">Copyright@2021 DamienDev. All Rights Reserved</div>
+	<script src="./Asserts/scripts/apps.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
 </html>

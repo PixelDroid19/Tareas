@@ -1,50 +1,160 @@
-*{
-    margin:0;
-    padding:0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.content{
-    width:90%;
-    display: grid;
-    max-width:1000px;
-    margin: 1.6em auto;
-    grid-template-columns: repeat(5,20%);
+body {
+  background-image: url("./background/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-form{
-	width:300px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-    grid-column: 2/5;
-	background-color:#ccc;
-}
-form input[type="text"]{
-    width:90%;
-	padding:3px 10px;
-	border:none;
-    outline:none;
-	border-bottom:1px solid black ;
-	background-color:#f6f6f6;
-	margin:8px 0;
-	display:inline-block;
+.GifCustom {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
 }
 
-form input[type="button"]{
-    width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-    
+.content {
+  width: 70%;
+  display: grid;
+  max-width: 750px;
+  margin: 1.6em auto;
+  border-radius: 8px;
+  grid-template-columns: repeat(2, 50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: rgba(0, 0, 0, 0.486);
 }
 
-form h1{
-    text-align: center;
+
+.information {
+  display: grid;
+  grid-template-rows: repeat(3, 30%);
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
 }
-#result{
-    text-align: center;
+
+.Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  padding: 16px;
+  border-left: 1px solid rgba(0, 0, 0, 0.308);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.Form > input[type="text"],
+input[type="text"] {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  margin: 8px 0;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  background-color: #f6f6f6;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid rgb(72, 116, 209);
+  border-radius: 6px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.Form input[type="text"]:focus {
+  border: 2px solid rgb(8, 185, 8);
+}
+
+.btn {
+  width: 50%;
+  color: #fff;
+  display: block;
+  margin: 1.6em auto;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 0px solid #000;
+  background-color: rgb(17, 78, 158);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(41, 45, 252, 0.671);
+  box-shadow: rgba(5, 77, 145, 0.07) 0px 1px 1px,
+    rgba(1, 6, 73, 0.07) 0px 2px 2px, rgba(19, 0, 104, 0.07) 0px 4px 4px,
+    rgba(34, 0, 114, 0.07) 0px 8px 8px, rgba(2, 35, 145, 0.07) 0px 16px 16px;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#result {
+  text-align: center;
+}
+
+/*icons*/
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all 0.8s;
+}
+
+.icon i {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+}
+
+svg circle {
+  stroke-dasharray: 80;
+}
+
+.icon:hover {
+  background-color: rgb(38, 46, 156);
+  box-shadow: 0px 0px 10px rgb(24, 54, 138);
+  cursor: pointer;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+  transition: all 0.8s ease-in-out;
+}
+
+.icon:hover:nth-child(2) {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }

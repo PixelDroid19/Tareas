@@ -82,42 +82,97 @@ body {
 	grid-area: footer;
 }
 
-.cardImg{
+.cardBox{
     display: grid;
     /*Tamaño que ocupa las columnas*/
-    grid-template-columns:32% 32% 32%;
-    /*Tamaño que ocupa las filas*/
-    grid-template-rows: auto;
-    /*Separación de columnas*/
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
     gap:1em;
 }
-.cardImg div{
-	/*Color de caja de imagenes*/
-    background-color: #445995;
-    padding:1.2em;
-}
 
-.cardImg div img{
-    width: 270px;
-	height: 230px;
-}
 
-.cardImg div:hover{
-    border: 1px solid #172644;
-}
-img{
-	border-radius: 4px;
-	border: 2px solid black;
-}
-
-@media screen and (max-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header header"
-						 	 "contenido contenido contenido"
-						 	 "navigation navigation navigation"
-						 	 "footer footer footer";
-	}
-	.cardImg div img{
-		width: 100px;
-	}
-}
+/*Card*/
+.cardBox .Card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3em;
+	width: 230px;
+	background-color: rgb(255, 255, 255);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: rgb(0, 10, 20) 0px 20px 30px -10px;
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	justify-self: center;
+	transition: all 0.25s ease;
+  }
+  
+  .cardBox .Card:hover {
+	cursor: pointer;
+  }
+  
+  .cardBox .Card .start {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0.5em;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(221, 18, 194, 0);
+	width: 100%;
+	height: 100%;
+  }
+  
+  .card-stats {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	background: rgba(107, 4, 47, 0.767);
+  }
+  
+  .cardBox .Card img {
+	max-inline-size: 100%;
+	block-size: auto;
+	height: 130px;
+  }
+  
+  .card-stats .stat {
+	display: flex;
+  
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	padding: 5px;
+  }
+  
+  .card-text {
+	margin: 5px;
+  }
+  .card-text .date {
+	color: rgb(150, 33, 81);
+	font-size: 14px;
+  }
+  .card-text p {
+	color: grey;
+	font-size: 15px;
+	padding: 3px;
+	font-weight: 300;
+  }
+  
+  .card-text h2 {
+	margin-top: 0px;
+	font-size: 26px;
+  }
+  
+  .cardBox .Card:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+	  rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	transform: scale(1.05);
+  
+	/* box-shadow:0 12px 16px rgba(0,0,0,0.2);
+	  transform: translateY(-15px);
+	  cursor: pointer;*/
+  }
+  /*Card end*/
+  

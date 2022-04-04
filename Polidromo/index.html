@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Palindromes</title>
+  </head>
+  <body>
     <div class="content">
-        
-        <form action="">
-            <h1>palindromo con javascript</h1>
-            <input type="text" name="" id="str">
-            <p id="result"></p>
-            <input type="button" value="Send" id="btn">
-            <br>
-            
-        </form>
-        
+      <div class="information">
+        <div class="">
+          <h3>Verificador de palíndromos</h3>
+        </div>
+        <div class="">
+          Los palíndromos son palabras o frases que al leerse de izquierda a
+          derecha y viceversa expresan o tienen el mismo sentido.
+        </div>
+        <div class="icons">
+          <div class="linkedin icon">
+            <svg height="40" width="40">
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                stroke="white"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+            <a href="https://www.linkedin.com/in/cesamen-monasterio-407ba618b/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+
+          <div class="icon">
+            <svg height="40" width="40">
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                stroke="white"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+            <a href="https://github.com/PixelDroid19"
+              ><i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Form">
+        <img src="./icons/icon.gif" class="GifCustom" alt="" />
+        <input
+          type="text"
+          placeholder="Ingrese una palabra"
+          id="str"
+          class="getStyle"
+        /><br />
+        <p id="result"></p>
+        <input type="button" value="Verificar" id="btnCheck" class="btn" />
+      </div>
     </div>
-    
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

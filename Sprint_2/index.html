@@ -1,125 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Sprint 2</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://kit.fontawesome.com/7cedd886a2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+   <header>
+     <img class="logo" src="./Asserts/Logo/NoLogo.png" alt="">
+     <nav>
+       <ul class="nav_link">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Course</a></li>
+         <li><a href="#">Service</a></li>
+       </ul>
+     </nav>
+     <a href="#" class="cta"><button>Contact</button></a>
+   </header>
+
     <div class="content">
-        
-        <div id="wrapper">
-        <header id="header">
-           
-                <img src="" alt="" id="header-img">
-                <h1>PROGRAMING</h1>
-            
-
-            <nav id="nav-bar">
-                <ul>
-                    <li><a href="#works" class="nav-link">How works</a></li>
-                    <li><a href="#features" class="nav-link">Features</a></li>
-                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                </ul>
-            </nav>
-        </header>
-        </div>
-        <main>
-        <section id="producto">
-            <h2>Email</h2>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input name="email" id="email" type="email" placeholder="Dirección Email" required/>
-                    <input id="submit" type="submit" value="Send" class="btn" />
-                </form>
-        </section>
-        </main>
-
-
-        <div class="container">
-            <section id="features">
-              <div class="inf">
-                  <h2>Materiales</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tempore.
-                  </p>
-              </div>
-    
-              <div class="inf">
-                <h2>Materiales</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tempore.
-                </p>
+      <div class="products">
+        <div class="Card">
+          <img src="./Asserts/Course/CourseHtml.jpg" alt="" />
+          <div class="card-text">
+            <span class="date">10 days Sep</span>
+            <h2>Course HTML</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
+              temporibus omnis illum maxime quod deserunt eligendi dolor
+            </p>
+          </div>
+          <div class="card-stats">
+            <div class="stat">
+              <i class="fa fa-book-open" aria-hidden="true"></i>
+              <div class="value">4<sup>m</sup></div>
             </div>
-    
-              <div class="inf">
-                  <h2>Materiales</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tempore.
-                  </p>
-              </div>
-    
-            </section>
-    
-            <section id="works">
-              <iframe  id="video" width="808" height="451" src="https://www.youtube.com/embed/Zqft6yNRuNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section id="pricing">
-
-              <div class="product" id="tenor">
-                <div class="level">CSS</div>
-                <h2>$300</h2>
-                <ol>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum dolor.</li>
-                  <li>Lorem ipsum.</li>
-                </ol>
-                <button class="btn">Select</button>
-              </div>
-              
-              <div class="product" id="bass">
-                <div class="level">Javascript</div>
-                <h2>$100</h2>
-                <ol>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum dolor.</li>
-                  <li>Lorem ipsum.</li>
-                </ol>
-                <button class="btn">Select</button>
-              </div>
-
-              <div class="product" id="valve">
-                <div class="level">HTML</div>
-                <h2>$900</h2>
-                <ol>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum.</li>
-                  <li>Lorem ipsum dolor.</li>
-                  <li>Lorem ipsum.</li>
-                </ol>
-                <button class="btn">Select</button>
-              </div>
-            </section>
-    
-            <footer>
-              <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-    
-              <span>Hecho por damien</span>
-            </footer>
-    
+            <div class="stat">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <div class="value">5123</div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+              <div class="value">32</div>
+            </div>
           </div>
         </div>
+
+        <div class="Card">
+          <img src="./Asserts/Course/CourseCss.png" alt="" />
+          <div class="card-text">
+            <span class="date">16 days Apr</span>
+            <h2>Course CSS</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
+              temporibus omnis illum maxime quod deserunt eligendi dolor
+            </p>
+          </div>
+          <div class="card-stats">
+            <div class="stat">
+              <i class="fa fa-book-open" aria-hidden="true"></i>
+              <div class="value">4<sup>m</sup></div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <div class="value">5123</div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+              <div class="value">32</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Card">
+          <img src="./Asserts/Course/CourseJavascript.jpg" alt="" />
+          <div class="card-text">
+            <span class="date">31 days Jan</span>
+            <h2>Course HTML</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
+              temporibus omnis illum maxime quod deserunt eligendi dolor
+            </p>
+          </div>
+          <div class="card-stats">
+            <div class="stat">
+              <i class="fa fa-book-open" aria-hidden="true"></i>
+              <div class="value">4<sup>m</sup></div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <div class="value">5123</div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+              <div class="value">32</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="Card">
+          <img src="./Asserts/Course/CourseReact.png" alt="" />
+          <div class="card-text">
+            <span class="date">3 days Feb</span>
+            <h2>Course React</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
+              temporibus omnis illum maxime quod deserunt eligendi dolor
+            </p>
+          </div>
+          <div class="card-stats">
+            <div class="stat">
+              <i class="fa fa-book-open" aria-hidden="true"></i>
+              <div class="value">4<sup>m</sup></div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <div class="value">5123</div>
+            </div>
+            <div class="stat">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+              <div class="value">32</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="video">
+        <iframe width="70%" height="400" src="https://www.youtube.com/embed/VlsWkpGWqvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+  
     </div>
 
+    <footer>
+      <div class="container">
+          <div class="about">
+              <h2>About Us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque enim iusto tempora repellat
+                  molestiae. Sed voluptatem sapiente magni, eos nisi tempore eligendi expedita laboriosam incidunt
+                  necessitatibus porro obcaecati odit beatae. Deleniti libero iusto eius dolorem quo, quasi et
+                  aspernatur hic! Natus asperiores beatae reprehenderit dolorem, ea earum esse! Temporibus, amet.</p>
+             
+                  <ul class="sci">
+                      <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                              </i></a></li>
+                      <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>
+                              </i></a></li>
+                      <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a></li>
+                      <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>
+                          </a></li>
+                  </ul>
+             
+          </div>
+          <div class="quick">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms & Conditions</a>
+                  </li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+          </div>
+          <div class="contents">
+              <h2>contents</h2>
+              <ul>
+                  <li><a href="">Course</a></li>
+                  <li><a href="">technology</a></li>
+                  <li><a href="">Mobile</a></li>
+              </ul>
+          </div>
+          <div class="contactUs">
+              <h2>Contact Us</h2>
+              <!-- <hr width="50%"> -->
+              <ul>
+                  <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Lorem ipsum dolor sit</a></li>
+                  <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i>
+                          xxxxxxxxx</a></li>
+                  <li><a href=""> <i class="fa fa-envelope" aria-hidden="true"></i>
+                          xxxxxxxxxxx@gmail.com</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  <div class="copyright">Copyright@2021 DamienDev. All Rights Reserved</div>
 
-   
-    
-</body>
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+  </body>
 </html>
